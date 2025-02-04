@@ -1,0 +1,10 @@
+[Unit]
+Description=Send alert when desktop lock screen is unlocked
+
+[Service]
+Type=simple
+User=__USER__
+ExecStart=__DESKTOP_UNLOCK_ALERT_DIR__/desktop-unlock-alert.sh
+
+[Install]
+WantedBy=multi-user.target

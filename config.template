@@ -1,0 +1,29 @@
+# In seconds, how long should we wait for internet connection
+# to become available after e.g. resuming from sleep
+DESKTOP_UNLOCK_ALERT_NETWORK_TIMEOUT=60
+
+# Uncomment the settings you wish to activate:
+
+## SMTP
+#DESKTOP_UNLOCK_ALERT_SMTP_HOST=
+#DESKTOP_UNLOCK_ALERT_SMTP_PORT=
+#DESKTOP_UNLOCK_ALERT_SMTP_STARTTLS="-starttls smtp"
+#DESKTOP_UNLOCK_ALERT_SMTP_USERNAME=
+#DESKTOP_UNLOCK_ALERT_SMTP_PASSWORD=
+#DESKTOP_UNLOCK_ALERT_SMTP_FROM_EMAIL=
+#DESKTOP_UNLOCK_ALERT_SMTP_TO_EMAIL=
+#DESKTOP_UNLOCK_ALERT_SMTP_SUBJECT="Screen unlocked"
+#DESKTOP_UNLOCK_ALERT_SMTP_MESSAGE="Hello, your screen was unlocked."
+
+function desktop_unlock_alert_smtp_send_mail() {
+  # TODO
+  # We did not want to be dependent on any particular SMTP command so
+  # you can implement this function using your favorite SMTP mechanisms
+  echo "desktop_unlock_alert_smtp_send_mail() - Implement this function using your favorite SMTP mechanisms."
+  return 1
+}
+
+## Telegram
+#DESKTOP_UNLOCK_ALERT_TELEGRAM_BOT_TOKEN=
+#DESKTOP_UNLOCK_ALERT_TELEGRAM_CHAT_ID=
+#DESKTOP_UNLOCK_ALERT_TELEGRAM_MESSAGE="Screen unlocked"
